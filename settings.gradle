@@ -1,2 +1,3 @@
+include ':AndroidDependencies'
 include ':app'
 rootProject.name = "Shouldoist"
