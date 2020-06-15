@@ -8,7 +8,7 @@ import androidx.annotation.LayoutRes
 import androidx.fragment.app.Fragment
 
 abstract class BaseFragment : Fragment() {
-    
+
     @LayoutRes
     internal abstract fun layoutRes(): Int
 
