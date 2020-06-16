@@ -7,5 +7,13 @@
     <fragment
         android:id="@+id/todosFragment"
         android:name="com.salmanseifian.shouldoist.todos.TodosFragment"
-        android:label="TodosFragment" />
+        android:label="TodosFragment">
+        <action
+            android:id="@+id/action_todosFragment_to_addTodoFragment"
+            app:destination="@id/addTodoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addTodoFragment"
+        android:name="com.salmanseifian.shouldoist.add.AddTodoFragment"
+        android:label="AddTodoFragment" />
 </navigation>
