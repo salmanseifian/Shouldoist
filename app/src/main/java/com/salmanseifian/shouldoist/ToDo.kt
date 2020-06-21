@@ -6,11 +6,11 @@ import java.util.*
 
 @Entity(tableName = "todos")
 data class ToDo constructor(
-    val title: String,
-    val description: String,
-    val priority: Priority,
-    val createdAt: Date,
-    val dueDate: Date
+    var title: String?,
+    var description: String?,
+    var createdAt: Date?,
+    var dueDate: Date?,
+    var priority: Priority = Priority.NORMAL
 ) {
     @PrimaryKey(autoGenerate = true)
     var id: Int = 1
